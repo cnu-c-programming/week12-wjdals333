@@ -8,7 +8,7 @@ int main(int argc, const char* argv[]) {
     FILE* fp = fopen(argv[1], "r");
     const char* target_str = argv[2];
 
-    char line[100];
+    char line[200];
     while (fgets(line, sizeof(line), fp) != NULL) {
         if (strstr(line, target_str)) {
             printf("%s", line);
