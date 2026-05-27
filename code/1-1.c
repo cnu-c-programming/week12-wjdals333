@@ -11,7 +11,7 @@ int main(int argc, const char* argv[]) {
     char buffer[256] = {0};
 
     FILE* fp = fopen(filename, "r");
-    if (fp = NULL) {
+    if (fp == NULL) {
         return 0;
     }    
 
